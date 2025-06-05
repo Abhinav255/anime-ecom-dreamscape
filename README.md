@@ -4,6 +4,8 @@ AnimeVerse Merch is a full-featured e-commerce platform built for anime lovers, 
 Inspired by industry leaders like TheSouledStore and ComicSense.store, this platform is designed with both style and functionality in mind.
 
 🌟 Features
+
+
 🖼️ Home Page with featured carousels, new arrivals, and anime-specific collections
 
 🧥 Product Pages for detailed descriptions, size selection, and high-res galleries
