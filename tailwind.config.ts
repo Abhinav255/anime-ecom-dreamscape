@@ -53,18 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Anime theme colors
+				// Naruto theme colors
 				neon: {
-					purple: '#9D4EDD',
-					cyan: '#06FFA5',
-					magenta: '#FF006E',
-					pink: '#FB8500',
-					blue: '#8338EC'
+					blue: '#3B82F6',
+					red: '#EF4444',
+					orange: '#F97316',
+					white: '#FFFFFF',
+					lightBlue: '#60A5FA'
 				},
-				anime: {
-					dark: '#0F0F23',
-					darkSecondary: '#1A1A2E',
-					darkAccent: '#16213E'
+				naruto: {
+					dark: '#0F1423',
+					darkSecondary: '#1E3A8A',
+					darkAccent: '#1E40AF'
 				}
 			},
 			borderRadius: {
@@ -94,8 +94,8 @@ export default {
 					'50%': { transform: 'translateY(-10px)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(157, 78, 221, 0.3)' },
-					'50%': { boxShadow: '0 0 30px rgba(157, 78, 221, 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.3)' },
+					'50%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.6)' }
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(100%)', opacity: '0' },
@@ -115,9 +115,9 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out'
 			},
 			backgroundImage: {
-				'neon-gradient': 'linear-gradient(135deg, #9D4EDD 0%, #06FFA5 50%, #FF006E 100%)',
-				'anime-gradient': 'linear-gradient(135deg, #8338EC 0%, #FB8500 100%)',
-				'dark-gradient': 'linear-gradient(135deg, #0F0F23 0%, #1A1A2E 100%)'
+				'neon-gradient': 'linear-gradient(135deg, #3B82F6 0%, #EF4444 50%, #F97316 100%)',
+				'naruto-gradient': 'linear-gradient(135deg, #3B82F6 0%, #EF4444 100%)',
+				'dark-gradient': 'linear-gradient(135deg, #0F1423 0%, #1E3A8A 100%)'
 			}
 		}
 	},

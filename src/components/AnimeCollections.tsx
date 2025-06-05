@@ -11,42 +11,42 @@ const AnimeCollections = () => {
       name: 'Naruto',
       itemCount: 150,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-orange-500 to-red-600'
+      bgColor: 'from-orange-500 to-neon-blue'
     },
     {
       id: 2,
       name: 'One Piece',
       itemCount: 200,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-blue-500 to-teal-600'
+      bgColor: 'from-neon-blue to-neon-lightBlue'
     },
     {
       id: 3,
       name: 'Attack on Titan',
       itemCount: 89,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-green-600 to-emerald-700'
+      bgColor: 'from-neon-red to-emerald-700'
     },
     {
       id: 4,
       name: 'Demon Slayer',
       itemCount: 120,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-purple-600 to-pink-600'
+      bgColor: 'from-neon-blue to-neon-red'
     },
     {
       id: 5,
       name: 'Jujutsu Kaisen',
       itemCount: 95,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-indigo-600 to-purple-700'
+      bgColor: 'from-indigo-600 to-neon-blue'
     },
     {
       id: 6,
       name: 'Dragon Ball Z',
       itemCount: 180,
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop',
-      bgColor: 'from-yellow-500 to-orange-600'
+      bgColor: 'from-neon-orange to-neon-red'
     }
   ];
 
@@ -78,14 +78,14 @@ const AnimeCollections = () => {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className="p-3 rounded-full glass-card hover:bg-neon-purple/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="p-3 rounded-full glass-card hover:bg-neon-blue/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronLeft className="w-6 h-6 text-white" />
             </button>
             <button
               onClick={nextSlide}
               disabled={currentIndex === maxIndex}
-              className="p-3 rounded-full glass-card hover:bg-neon-purple/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="p-3 rounded-full glass-card hover:bg-neon-blue/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronRight className="w-6 h-6 text-white" />
             </button>
@@ -114,7 +114,7 @@ const AnimeCollections = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                     
                     <div className="absolute bottom-6 left-6 right-6">
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors">
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-neon-lightBlue transition-colors">
                         {collection.name}
                       </h3>
                       <p className="text-gray-200 text-sm">

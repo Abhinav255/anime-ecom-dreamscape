@@ -53,7 +53,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-[80vh] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-anime-dark/80 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-naruto-dark/80 to-transparent z-10" />
       
       {slides.map((slide, index) => (
         <div
@@ -67,14 +67,14 @@ const HeroSection = () => {
             backgroundPosition: 'center'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-anime-dark via-anime-dark/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-naruto-dark via-naruto-dark/60 to-transparent" />
         </div>
       ))}
 
       <div className="relative z-20 container mx-auto px-4 h-full flex items-center">
         <div className="max-w-2xl animate-fade-in">
           <div className="mb-4">
-            <span className="inline-block px-4 py-2 bg-neon-gradient rounded-full text-sm font-semibold animate-pulse">
+            <span className="inline-block px-4 py-2 bg-naruto-gradient rounded-full text-sm font-semibold animate-pulse">
               {slides[currentSlide].badge}
             </span>
           </div>
@@ -83,7 +83,7 @@ const HeroSection = () => {
             {slides[currentSlide].title}
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-neon-cyan mb-6 font-semibold">
+          <h2 className="text-2xl md:text-3xl text-neon-lightBlue mb-6 font-semibold">
             {slides[currentSlide].subtitle}
           </h2>
           
@@ -95,7 +95,7 @@ const HeroSection = () => {
             <Button className="btn-neon text-lg px-8 py-4">
               {slides[currentSlide].cta}
             </Button>
-            <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-white text-lg px-8 py-4">
+            <Button variant="outline" className="border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-white text-lg px-8 py-4">
               View Collections
             </Button>
           </div>
@@ -105,14 +105,14 @@ const HeroSection = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 p-3 rounded-full glass-card hover:bg-neon-purple/20 transition-all duration-300"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 p-3 rounded-full glass-card hover:bg-neon-blue/20 transition-all duration-300"
       >
         <ChevronLeft className="w-6 h-6 text-white" />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 p-3 rounded-full glass-card hover:bg-neon-purple/20 transition-all duration-300"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 p-3 rounded-full glass-card hover:bg-neon-blue/20 transition-all duration-300"
       >
         <ChevronRight className="w-6 h-6 text-white" />
       </button>
@@ -125,7 +125,7 @@ const HeroSection = () => {
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentSlide 
-                ? 'bg-neon-purple scale-125' 
+                ? 'bg-neon-blue scale-125' 
                 : 'bg-white/50 hover:bg-white/75'
             }`}
           />

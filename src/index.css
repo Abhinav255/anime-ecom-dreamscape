@@ -5,25 +5,25 @@
 
 @layer base {
   :root {
-    --background: 15 15 35;
+    --background: 15 20 35;
     --foreground: 255 255 255;
 
-    --card: 26 26 46;
+    --card: 20 30 50;
     --card-foreground: 255 255 255;
 
-    --popover: 26 26 46;
+    --popover: 20 30 50;
     --popover-foreground: 255 255 255;
 
-    --primary: 157 78 221;
+    --primary: 59 130 246;
     --primary-foreground: 255 255 255;
 
-    --secondary: 22 33 62;
+    --secondary: 30 58 138;
     --secondary-foreground: 255 255 255;
 
-    --muted: 22 33 62;
+    --muted: 30 58 138;
     --muted-foreground: 156 163 175;
 
-    --accent: 131 56 236;
+    --accent: 239 68 68;
     --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
@@ -31,7 +31,7 @@
 
     --border: 55 65 81;
     --input: 55 65 81;
-    --ring: 157 78 221;
+    --ring: 59 130 246;
 
     --radius: 0.5rem;
   }
@@ -43,8 +43,8 @@
   }
 
   body {
-    @apply bg-anime-dark text-foreground font-sans;
-    background: linear-gradient(135deg, #0F0F23 0%, #1A1A2E 100%);
+    @apply bg-naruto-dark text-foreground font-sans;
+    background: linear-gradient(135deg, #0F1423 0%, #1E3A8A 100%);
   }
 
   /* Custom scrollbar */
@@ -53,16 +53,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1A1A2E;
+    background: #1E3A8A;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #9D4EDD, #06FFA5);
+    background: linear-gradient(135deg, #3B82F6, #EF4444);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #8338EC, #FB8500);
+    background: linear-gradient(135deg, #2563EB, #DC2626);
   }
 }
 
@@ -77,12 +77,12 @@
 
   .btn-neon {
     @apply relative px-6 py-3 font-bold text-white rounded-lg overflow-hidden transition-all duration-300;
-    background: linear-gradient(135deg, #9D4EDD, #06FFA5);
+    background: linear-gradient(135deg, #3B82F6, #EF4444);
   }
 
   .btn-neon:hover {
     @apply scale-105;
-    box-shadow: 0 0 25px rgba(157, 78, 221, 0.5);
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
   }
 
   .product-card {
@@ -90,6 +90,6 @@
   }
 
   .product-card:hover {
-    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.3);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
   }
 }

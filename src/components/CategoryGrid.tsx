@@ -10,7 +10,7 @@ const CategoryGrid = () => {
       description: 'T-shirts, Hoodies & More',
       image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop',
       itemCount: '500+ items',
-      gradient: 'from-neon-purple to-neon-magenta'
+      gradient: 'from-neon-blue to-neon-red'
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const CategoryGrid = () => {
       description: 'Figures & Models',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
       itemCount: '200+ items',
-      gradient: 'from-neon-cyan to-neon-blue'
+      gradient: 'from-neon-lightBlue to-neon-blue'
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const CategoryGrid = () => {
       description: 'Bags, Keychains & More',
       image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop',
       itemCount: '300+ items',
-      gradient: 'from-neon-magenta to-neon-pink'
+      gradient: 'from-neon-red to-neon-orange'
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const CategoryGrid = () => {
       description: 'Costumes & Props',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
       itemCount: '150+ items',
-      gradient: 'from-neon-blue to-neon-purple'
+      gradient: 'from-neon-blue to-neon-orange'
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ const CategoryGrid = () => {
       description: 'Posters & Tapestries',
       image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
       itemCount: '400+ items',
-      gradient: 'from-neon-pink to-neon-cyan'
+      gradient: 'from-neon-orange to-neon-lightBlue'
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const CategoryGrid = () => {
       description: 'Limited Editions',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
       itemCount: '50+ items',
-      gradient: 'from-neon-purple to-neon-pink'
+      gradient: 'from-neon-blue to-neon-red'
     }
   ];
 
@@ -82,17 +82,17 @@ const CategoryGrid = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors">
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-neon-lightBlue transition-colors">
                 {category.name}
               </h3>
               <p className="text-gray-200 mb-2">{category.description}</p>
-              <span className="text-sm text-neon-cyan font-semibold">
+              <span className="text-sm text-neon-lightBlue font-semibold">
                 {category.itemCount}
               </span>
             </div>
 
             <div className="absolute top-4 right-4 w-12 h-12 rounded-full glass-card flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300">
-              <ChevronRight className="w-6 h-6 text-neon-cyan" />
+              <ChevronRight className="w-6 h-6 text-neon-lightBlue" />
             </div>
           </Link>
         ))}

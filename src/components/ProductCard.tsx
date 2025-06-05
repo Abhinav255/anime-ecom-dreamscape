@@ -34,7 +34,7 @@ const ProductCard = ({
     <div className="group product-card">
       <div className="relative overflow-hidden rounded-xl mb-4">
         {/* Product Image */}
-        <div className="aspect-square bg-gradient-to-br from-anime-darkSecondary to-anime-darkAccent">
+        <div className="aspect-square bg-gradient-to-br from-naruto-darkSecondary to-naruto-darkAccent">
           <img
             src={image}
             alt={name}
@@ -45,12 +45,12 @@ const ProductCard = ({
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {isNew && (
-            <span className="px-2 py-1 bg-neon-gradient text-white text-xs font-bold rounded-full">
+            <span className="px-2 py-1 bg-naruto-gradient text-white text-xs font-bold rounded-full">
               NEW
             </span>
           )}
           {isLimited && (
-            <span className="px-2 py-1 bg-neon-magenta text-white text-xs font-bold rounded-full animate-pulse">
+            <span className="px-2 py-1 bg-neon-red text-white text-xs font-bold rounded-full animate-pulse">
               LIMITED
             </span>
           )}
@@ -68,7 +68,7 @@ const ProductCard = ({
         >
           <Heart 
             className={`w-5 h-5 transition-colors ${
-              isWishlisted ? 'fill-neon-magenta text-neon-magenta' : 'text-white hover:text-neon-magenta'
+              isWishlisted ? 'fill-neon-red text-neon-red' : 'text-white hover:text-neon-red'
             }`} 
           />
         </button>
@@ -84,7 +84,7 @@ const ProductCard = ({
 
       {/* Product Info */}
       <div className="space-y-2">
-        <h3 className="font-semibold text-white group-hover:text-neon-cyan transition-colors line-clamp-2">
+        <h3 className="font-semibold text-white group-hover:text-neon-lightBlue transition-colors line-clamp-2">
           {name}
         </h3>
 
@@ -99,7 +99,7 @@ const ProductCard = ({
 
         {/* Price */}
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-neon-cyan">₹{price}</span>
+          <span className="text-lg font-bold text-neon-lightBlue">₹{price}</span>
           {originalPrice && (
             <span className="text-sm text-gray-500 line-through">₹{originalPrice}</span>
           )}

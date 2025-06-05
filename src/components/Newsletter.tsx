@@ -15,13 +15,13 @@ const Newsletter = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-neon-gradient opacity-10" />
-      <div className="absolute inset-0 bg-anime-dark/80" />
+      <div className="absolute inset-0 bg-naruto-gradient opacity-10" />
+      <div className="absolute inset-0 bg-naruto-dark/80" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-neon-gradient flex items-center justify-center animate-float">
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-naruto-gradient flex items-center justify-center animate-float">
               <Mail className="w-10 h-10 text-white" />
             </div>
             
@@ -43,7 +43,7 @@ const Newsletter = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 bg-anime-darkSecondary border-neon-purple/30 text-white placeholder-gray-400 h-12"
+                className="flex-1 bg-naruto-darkSecondary border-neon-blue/30 text-white placeholder-gray-400 h-12"
               />
               <Button type="submit" className="btn-neon h-12 px-8">
                 Subscribe
