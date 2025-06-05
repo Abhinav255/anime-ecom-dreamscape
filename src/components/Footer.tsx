@@ -133,7 +133,7 @@ const Footer = () => {
               <Link to="/privacy" className="text-anime-textSecondary hover:text-neon-skyBlue transition-colors anime-text">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-anime-textSecondary hover:text-neon-skyBlue transition-colors anime-text">
+              <Link to="/terms" className="text-anime-textSecondary  hover:text-neon-skyBlue transition-colors anime-text">
                 Terms of Service
               </Link>
               <Link to="/cookies" className="text-anime-textSecondary hover:text-neon-skyBlue transition-colors anime-text">
