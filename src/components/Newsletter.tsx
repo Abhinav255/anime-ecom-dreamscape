@@ -15,21 +15,21 @@ const Newsletter = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-naruto-gradient opacity-10" />
-      <div className="absolute inset-0 bg-naruto-dark/80" />
+      <div className="absolute inset-0 bg-anime-gradient opacity-20" />
+      <div className="absolute inset-0 bg-anime-light/90" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-naruto-gradient flex items-center justify-center animate-float">
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-anime-gradient flex items-center justify-center animate-float glow-effect">
               <Mail className="w-10 h-10 text-white" />
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-neon-skyBlue anime-title">
               Join the Anime Community
             </h2>
             
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-anime-text max-w-2xl mx-auto anime-text">
               Get exclusive access to new drops, limited editions, and special offers. 
               Plus, receive a 10% discount on your first order!
             </p>
@@ -43,7 +43,7 @@ const Newsletter = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 bg-naruto-darkSecondary border-neon-blue/30 text-white placeholder-gray-400 h-12"
+                className="flex-1 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary h-12 anime-text"
               />
               <Button type="submit" className="btn-neon h-12 px-8">
                 Subscribe
@@ -51,7 +51,7 @@ const Newsletter = () => {
             </div>
           </form>
 
-          <div className="mt-8 flex items-center justify-center gap-8 text-sm text-gray-400">
+          <div className="mt-8 flex items-center justify-center gap-8 text-sm text-anime-textSecondary anime-text">
             <span className="flex items-center gap-2">
               ✨ Early access to new collections
             </span>

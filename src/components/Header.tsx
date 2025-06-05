@@ -18,15 +18,15 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 glass-card border-b border-neon-blue/20">
+    <header className="sticky top-0 z-50 glass-card border-b border-sky-200/60">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-naruto-gradient rounded-lg flex items-center justify-center">
-              <span className="text-xl font-bold">A</span>
+            <div className="w-10 h-10 bg-anime-gradient rounded-lg flex items-center justify-center glow-effect">
+              <span className="text-xl font-bold anime-title text-white">A</span>
             </div>
-            <span className="text-xl font-bold neon-text text-neon-blue">
+            <span className="text-xl font-bold neon-text text-neon-skyBlue anime-title">
               AnimeVerse
             </span>
           </Link>
@@ -37,7 +37,7 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-gray-300 hover:text-neon-lightBlue transition-colors duration-300"
+                className="text-anime-text hover:text-neon-skyBlue transition-colors duration-300 anime-text font-semibold"
               >
                 {link.name}
               </Link>
@@ -47,26 +47,26 @@ const Header = () => {
           {/* Search Bar */}
           <div className="hidden lg:flex items-center space-x-4 flex-1 max-w-md mx-8">
             <div className="relative w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-anime-textSecondary w-4 h-4" />
               <Input
                 placeholder="Search anime merchandise..."
-                className="pl-10 bg-naruto-darkSecondary border-neon-blue/30 text-white placeholder-gray-400"
+                className="pl-10 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary anime-text"
               />
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-gray-300 hover:text-neon-lightBlue">
+            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-skyBlue">
               <User className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-gray-300 hover:text-neon-red">
+            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-white">
               <Heart className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="relative text-gray-300 hover:text-neon-blue">
+            <Button variant="ghost" size="icon" className="relative text-anime-text hover:text-neon-skyBlue">
               <ShoppingBag className="w-5 h-5" />
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-neon-red text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+                <span className="absolute -top-1 -right-1 bg-neon-skyBlue text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse font-orbitron">
                   {cartCount}
                 </span>
               )}
@@ -76,7 +76,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden text-gray-300"
+              className="md:hidden text-anime-text"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -87,10 +87,10 @@ const Header = () => {
         {/* Mobile Search */}
         <div className="lg:hidden pb-4">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-anime-textSecondary w-4 h-4" />
             <Input
               placeholder="Search anime merchandise..."
-              className="pl-10 bg-naruto-darkSecondary border-neon-blue/30 text-white placeholder-gray-400"
+              className="pl-10 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary anime-text"
             />
           </div>
         </div>
@@ -98,13 +98,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden glass-card border-t border-neon-blue/20 animate-slide-up">
+        <div className="md:hidden glass-card border-t border-sky-200/60 animate-slide-up">
           <nav className="container mx-auto px-4 py-4 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="block text-gray-300 hover:text-neon-lightBlue transition-colors duration-300 py-2"
+                className="block text-anime-text hover:text-neon-skyBlue transition-colors duration-300 py-2 anime-text font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}

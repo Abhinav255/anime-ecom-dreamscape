@@ -53,19 +53,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Naruto theme colors
+				// Anime theme colors
 				neon: {
-					blue: '#3B82F6',
-					red: '#EF4444',
-					orange: '#F97316',
+					skyBlue: '#0EA5E9',
+					lightBlue: '#38BDF8',
 					white: '#FFFFFF',
-					lightBlue: '#60A5FA'
+					cream: '#FFFBEB',
+					silver: '#F8FAFC'
 				},
-				naruto: {
-					dark: '#0F1423',
-					darkSecondary: '#1E3A8A',
-					darkAccent: '#1E40AF'
+				anime: {
+					light: '#F0F9FF',
+					lightSecondary: '#E0F2FE',
+					lightAccent: '#DBEAFE',
+					text: '#1E3A8A',
+					textSecondary: '#1E40AF'
 				}
+			},
+			fontFamily: {
+				'orbitron': ['Orbitron', 'monospace'],
+				'rajdhani': ['Rajdhani', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -94,8 +100,12 @@ export default {
 					'50%': { transform: 'translateY(-10px)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.3)' },
-					'50%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.6)' }
+					'0%, 100%': { 
+						boxShadow: '0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(255, 255, 255, 0.2)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 30px rgba(14, 165, 233, 0.5), 0 0 60px rgba(255, 255, 255, 0.4)' 
+					}
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(100%)', opacity: '0' },
@@ -115,9 +125,9 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out'
 			},
 			backgroundImage: {
-				'neon-gradient': 'linear-gradient(135deg, #3B82F6 0%, #EF4444 50%, #F97316 100%)',
-				'naruto-gradient': 'linear-gradient(135deg, #3B82F6 0%, #EF4444 100%)',
-				'dark-gradient': 'linear-gradient(135deg, #0F1423 0%, #1E3A8A 100%)'
+				'neon-gradient': 'linear-gradient(135deg, #0EA5E9 0%, #FFFFFF 50%, #38BDF8 100%)',
+				'anime-gradient': 'linear-gradient(135deg, #0EA5E9 0%, #FFFFFF 100%)',
+				'light-gradient': 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)'
 			}
 		}
 	},

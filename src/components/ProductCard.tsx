@@ -34,7 +34,7 @@ const ProductCard = ({
     <div className="group product-card">
       <div className="relative overflow-hidden rounded-xl mb-4">
         {/* Product Image */}
-        <div className="aspect-square bg-gradient-to-br from-naruto-darkSecondary to-naruto-darkAccent">
+        <div className="aspect-square bg-gradient-to-br from-anime-lightSecondary to-anime-lightAccent">
           <img
             src={image}
             alt={name}
@@ -45,17 +45,17 @@ const ProductCard = ({
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {isNew && (
-            <span className="px-2 py-1 bg-naruto-gradient text-white text-xs font-bold rounded-full">
+            <span className="px-2 py-1 bg-anime-gradient text-white text-xs font-bold rounded-full font-orbitron glow-effect">
               NEW
             </span>
           )}
           {isLimited && (
-            <span className="px-2 py-1 bg-neon-red text-white text-xs font-bold rounded-full animate-pulse">
+            <span className="px-2 py-1 bg-neon-skyBlue text-white text-xs font-bold rounded-full animate-pulse font-orbitron">
               LIMITED
             </span>
           )}
           {discount > 0 && (
-            <span className="px-2 py-1 bg-red-500 text-white text-xs font-bold rounded-full">
+            <span className="px-2 py-1 bg-destructive text-white text-xs font-bold rounded-full font-orbitron">
               -{discount}%
             </span>
           )}
@@ -68,7 +68,7 @@ const ProductCard = ({
         >
           <Heart 
             className={`w-5 h-5 transition-colors ${
-              isWishlisted ? 'fill-neon-red text-neon-red' : 'text-white hover:text-neon-red'
+              isWishlisted ? 'fill-neon-skyBlue text-neon-skyBlue' : 'text-anime-text hover:text-neon-skyBlue'
             }`} 
           />
         </button>
@@ -84,7 +84,7 @@ const ProductCard = ({
 
       {/* Product Info */}
       <div className="space-y-2">
-        <h3 className="font-semibold text-white group-hover:text-neon-lightBlue transition-colors line-clamp-2">
+        <h3 className="font-semibold text-anime-text group-hover:text-neon-skyBlue transition-colors line-clamp-2 anime-text">
           {name}
         </h3>
 
@@ -92,16 +92,16 @@ const ProductCard = ({
         <div className="flex items-center gap-2 text-sm">
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            <span className="text-gray-300">{rating}</span>
+            <span className="text-anime-textSecondary anime-text">{rating}</span>
           </div>
-          <span className="text-gray-500">({reviewCount})</span>
+          <span className="text-anime-textSecondary/60 anime-text">({reviewCount})</span>
         </div>
 
         {/* Price */}
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-neon-lightBlue">₹{price}</span>
+          <span className="text-lg font-bold text-neon-skyBlue font-orbitron">₹{price}</span>
           {originalPrice && (
-            <span className="text-sm text-gray-500 line-through">₹{originalPrice}</span>
+            <span className="text-sm text-anime-textSecondary/60 line-through font-orbitron">₹{originalPrice}</span>
           )}
         </div>
       </div>
