@@ -53,20 +53,26 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Anime theme colors
+				// Naruto theme colors
 				neon: {
-					skyBlue: '#0EA5E9',
-					lightBlue: '#38BDF8',
+					orange: '#FF6B35',
+					lightOrange: '#FF9A66',
+					darkOrange: '#E55A31',
+					blue: '#2563EB',
+					lightBlue: '#60A5FA',
+					pink: '#F472B6',
 					white: '#FFFFFF',
-					cream: '#FFFBEB',
-					silver: '#F8FAFC'
+					cream: '#FEF3E2'
 				},
 				anime: {
-					light: '#F0F9FF',
-					lightSecondary: '#E0F2FE',
-					lightAccent: '#DBEAFE',
-					text: '#1E3A8A',
-					textSecondary: '#1E40AF'
+					light: '#FCE7F3',
+					lightSecondary: '#FDF2F8',
+					lightAccent: '#FEF3E2',
+					text: '#1E40AF',
+					textSecondary: '#2563EB',
+					orange: '#FF6B35',
+					lightOrange: '#FF9A66',
+					darkOrange: '#E55A31'
 				}
 			},
 			fontFamily: {
@@ -101,10 +107,10 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(255, 255, 255, 0.2)' 
+						boxShadow: '0 0 20px rgba(255, 107, 53, 0.4), 0 0 40px rgba(37, 99, 235, 0.3)' 
 					},
 					'50%': { 
-						boxShadow: '0 0 30px rgba(14, 165, 233, 0.5), 0 0 60px rgba(255, 255, 255, 0.4)' 
+						boxShadow: '0 0 30px rgba(255, 107, 53, 0.6), 0 0 60px rgba(37, 99, 235, 0.5)' 
 					}
 				},
 				'slide-up': {
@@ -125,9 +131,10 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out'
 			},
 			backgroundImage: {
-				'neon-gradient': 'linear-gradient(135deg, #0EA5E9 0%, #FFFFFF 50%, #38BDF8 100%)',
-				'anime-gradient': 'linear-gradient(135deg, #0EA5E9 0%, #FFFFFF 100%)',
-				'light-gradient': 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)'
+				'neon-gradient': 'linear-gradient(135deg, #FF6B35 0%, #FF9A66 50%, #2563EB 100%)',
+				'anime-gradient': 'linear-gradient(135deg, #E55A31 0%, #FF6B35 50%, #FF9A66 100%)',
+				'light-gradient': 'linear-gradient(135deg, #FCE7F3 0%, #FDF2F8 50%, #FEF3E2 100%)',
+				'orange-gradient': 'linear-gradient(135deg, #E55A31 0%, #FF6B35 100%)'
 			}
 		}
 	},

@@ -63,7 +63,7 @@ const FeaturedProducts = () => {
   return (
     <section className="py-20 container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-neon-skyBlue anime-title">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-neon-orange anime-title">
           Featured Products
         </h2>
         <p className="text-xl text-anime-text max-w-2xl mx-auto anime-text">

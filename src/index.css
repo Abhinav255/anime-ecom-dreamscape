@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 240 248 255;
+    --background: 252 231 243;
     --foreground: 30 58 138;
 
     --card: 255 255 255;
@@ -16,24 +16,24 @@
     --popover: 255 255 255;
     --popover-foreground: 30 58 138;
 
-    --primary: 14 165 233;
+    --primary: 255 107 53;
     --primary-foreground: 255 255 255;
 
-    --secondary: 135 206 235;
+    --secondary: 244 114 182;
     --secondary-foreground: 30 58 138;
 
-    --muted: 219 234 254;
+    --muted: 254 243 226;
     --muted-foreground: 100 116 139;
 
     --accent: 255 255 255;
-    --accent-foreground: 14 165 233;
+    --accent-foreground: 37 99 235;
 
     --destructive: 239 68 68;
     --destructive-foreground: 255 255 255;
 
-    --border: 191 219 254;
-    --input: 219 234 254;
-    --ring: 14 165 233;
+    --border: 244 114 182;
+    --input: 254 243 226;
+    --ring: 255 107 53;
 
     --radius: 0.5rem;
   }
@@ -46,7 +46,7 @@
 
   body {
     @apply bg-anime-light text-foreground font-rajdhani;
-    background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #DBEAFE 100%);
+    background: linear-gradient(135deg, #FCE7F3 0%, #FDF2F8 50%, #FEF3E2 100%);
     font-family: 'Rajdhani', sans-serif;
   }
 
@@ -56,33 +56,33 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #E0F2FE;
+    background: #FDF2F8;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #0EA5E9, #FFFFFF);
+    background: linear-gradient(135deg, #FF6B35, #F472B6);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #0284C7, #F8FAFC);
+    background: linear-gradient(135deg, #E55A31, #EC4899);
   }
 }
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-lg bg-white/40 border border-sky-200/60 rounded-xl shadow-lg;
-    box-shadow: 0 8px 32px rgba(14, 165, 233, 0.12);
+    @apply backdrop-blur-lg bg-white/60 border border-pink-300/60 rounded-xl shadow-lg;
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
   }
 
   .neon-text {
     font-family: 'Orbitron', monospace;
     font-weight: 700;
     text-shadow: 
-      0 0 5px rgba(14, 165, 233, 0.8),
-      0 0 10px rgba(14, 165, 233, 0.6),
-      0 0 20px rgba(14, 165, 233, 0.4),
-      0 0 30px rgba(14, 165, 233, 0.2);
+      0 0 5px rgba(255, 107, 53, 0.8),
+      0 0 10px rgba(255, 107, 53, 0.6),
+      0 0 20px rgba(37, 99, 235, 0.4),
+      0 0 30px rgba(37, 99, 235, 0.2);
   }
 
   .anime-title {
@@ -94,19 +94,19 @@
 
   .btn-neon {
     @apply relative px-6 py-3 font-bold text-white rounded-lg overflow-hidden transition-all duration-300;
-    background: linear-gradient(135deg, #0EA5E9, #FFFFFF);
+    background: linear-gradient(135deg, #E55A31, #FF6B35, #FF9A66);
     font-family: 'Orbitron', monospace;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     box-shadow: 
-      0 0 20px rgba(14, 165, 233, 0.3),
+      0 0 20px rgba(255, 107, 53, 0.4),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   .btn-neon:hover {
     @apply scale-105;
     box-shadow: 
-      0 0 30px rgba(14, 165, 233, 0.5),
-      0 0 40px rgba(255, 255, 255, 0.3),
+      0 0 30px rgba(255, 107, 53, 0.6),
+      0 0 40px rgba(37, 99, 235, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
@@ -116,8 +116,8 @@
 
   .product-card:hover {
     box-shadow: 
-      0 10px 30px rgba(14, 165, 233, 0.2),
-      0 0 20px rgba(255, 255, 255, 0.3);
+      0 10px 30px rgba(255, 107, 53, 0.3),
+      0 0 20px rgba(37, 99, 235, 0.2);
   }
 
   .anime-text {
@@ -128,8 +128,8 @@
 
   .glow-effect {
     box-shadow: 
-      0 0 20px rgba(14, 165, 233, 0.3),
-      0 0 40px rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(255, 107, 53, 0.4),
+      0 0 40px rgba(37, 99, 235, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 }

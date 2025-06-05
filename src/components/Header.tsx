@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 glass-card border-b border-sky-200/60">
+    <header className="sticky top-0 z-50 glass-card border-b border-pink-300/60">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -26,7 +26,7 @@ const Header = () => {
             <div className="w-10 h-10 bg-anime-gradient rounded-lg flex items-center justify-center glow-effect">
               <span className="text-xl font-bold anime-title text-white">A</span>
             </div>
-            <span className="text-xl font-bold neon-text text-neon-skyBlue anime-title">
+            <span className="text-xl font-bold neon-text text-neon-orange anime-title">
               AnimeVerse
             </span>
           </Link>
@@ -37,7 +37,7 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-anime-text hover:text-neon-skyBlue transition-colors duration-300 anime-text font-semibold"
+                className="text-anime-text hover:text-neon-orange transition-colors duration-300 anime-text font-semibold"
               >
                 {link.name}
               </Link>
@@ -50,23 +50,23 @@ const Header = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-anime-textSecondary w-4 h-4" />
               <Input
                 placeholder="Search anime merchandise..."
-                className="pl-10 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary anime-text"
+                className="pl-10 bg-white/80 border-pink-300 text-anime-text placeholder-anime-textSecondary anime-text"
               />
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-skyBlue">
+            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-orange">
               <User className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-white">
+            <Button variant="ghost" size="icon" className="text-anime-text hover:text-neon-pink">
               <Heart className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="relative text-anime-text hover:text-neon-skyBlue">
+            <Button variant="ghost" size="icon" className="relative text-anime-text hover:text-neon-orange">
               <ShoppingBag className="w-5 h-5" />
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-neon-skyBlue text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse font-orbitron">
+                <span className="absolute -top-1 -right-1 bg-neon-orange text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse font-orbitron">
                   {cartCount}
                 </span>
               )}
@@ -90,7 +90,7 @@ const Header = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-anime-textSecondary w-4 h-4" />
             <Input
               placeholder="Search anime merchandise..."
-              className="pl-10 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary anime-text"
+              className="pl-10 bg-white/80 border-pink-300 text-anime-text placeholder-anime-textSecondary anime-text"
             />
           </div>
         </div>
@@ -98,13 +98,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden glass-card border-t border-sky-200/60 animate-slide-up">
+        <div className="md:hidden glass-card border-t border-pink-300/60 animate-slide-up">
           <nav className="container mx-auto px-4 py-4 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="block text-anime-text hover:text-neon-skyBlue transition-colors duration-300 py-2 anime-text font-semibold"
+                className="block text-anime-text hover:text-neon-orange transition-colors duration-300 py-2 anime-text font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}

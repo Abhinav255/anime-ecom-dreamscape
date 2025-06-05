@@ -9,9 +9,9 @@ const HeroSection = () => {
   const slides = [
     {
       id: 1,
-      title: "New Jujutsu Kaisen Collection",
-      subtitle: "Sukuna's Limited Edition Merchandise",
-      description: "Get your hands on exclusive JJK merch featuring your favorite characters",
+      title: "New Naruto Collection",
+      subtitle: "Hokage's Limited Edition Merchandise",
+      description: "Get your hands on exclusive Naruto merch featuring your favorite characters",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=600&fit=crop",
       cta: "Shop Now",
       badge: "Limited Edition"
@@ -67,7 +67,7 @@ const HeroSection = () => {
             backgroundPosition: 'center'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-anime-light via-anime-light/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-anime-light via-anime-lightSecondary/80 to-anime-lightAccent/60" />
         </div>
       ))}
 
@@ -79,7 +79,7 @@ const HeroSection = () => {
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 neon-text text-neon-skyBlue leading-tight anime-title">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 neon-text text-neon-orange leading-tight anime-title">
             {slides[currentSlide].title}
           </h1>
           
@@ -95,7 +95,7 @@ const HeroSection = () => {
             <Button className="btn-neon text-lg px-8 py-4">
               {slides[currentSlide].cta}
             </Button>
-            <Button variant="outline" className="border-neon-skyBlue text-neon-skyBlue hover:bg-neon-skyBlue hover:text-white text-lg px-8 py-4 anime-text font-semibold">
+            <Button variant="outline" className="border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-white text-lg px-8 py-4 anime-text font-semibold">
               View Collections
             </Button>
           </div>
@@ -125,7 +125,7 @@ const HeroSection = () => {
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentSlide 
-                ? 'bg-neon-skyBlue scale-125 glow-effect' 
+                ? 'bg-neon-orange scale-125 glow-effect' 
                 : 'bg-anime-textSecondary/50 hover:bg-anime-textSecondary/75'
             }`}
           />

@@ -15,8 +15,8 @@ const Newsletter = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-anime-gradient opacity-20" />
-      <div className="absolute inset-0 bg-anime-light/90" />
+      <div className="absolute inset-0 bg-orange-gradient opacity-20" />
+      <div className="absolute inset-0 bg-anime-lightSecondary/90" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -25,7 +25,7 @@ const Newsletter = () => {
               <Mail className="w-10 h-10 text-white" />
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-neon-skyBlue anime-title">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text text-neon-orange anime-title">
               Join the Anime Community
             </h2>
             
@@ -43,7 +43,7 @@ const Newsletter = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 bg-white/80 border-sky-200 text-anime-text placeholder-anime-textSecondary h-12 anime-text"
+                className="flex-1 bg-white/80 border-pink-300 text-anime-text placeholder-anime-textSecondary h-12 anime-text"
               />
               <Button type="submit" className="btn-neon h-12 px-8">
                 Subscribe
