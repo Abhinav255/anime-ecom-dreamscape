@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+🛒 AnimeVerse Merch – The Ultimate Anime Merchandise Store
+AnimeVerse Merch is a full-featured e-commerce platform built for anime lovers, offering a vibrant and immersive shopping experience for everything anime-inspired. From accurate anime character outfits and stylish apparel to wooden light-up katanas, cosplay accessories, wall tapestries, banners, and exclusive collab items – this store brings the anime world to real life.
 
-## Project info
+Inspired by industry leaders like TheSouledStore and ComicSense.store, this platform is designed with both style and functionality in mind.
 
-**URL**: https://lovable.dev/projects/e3fe2afc-ca45-4623-818e-70436ab9315f
+🌟 Features
+🖼️ Home Page with featured carousels, new arrivals, and anime-specific collections
 
-## How can I edit this code?
+🧥 Product Pages for detailed descriptions, size selection, and high-res galleries
 
-There are several ways of editing your application.
+🛒 Cart & Checkout System with multiple payment methods
 
-**Use Lovable**
+👤 User Dashboard to manage orders, profiles, and wishlists
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e3fe2afc-ca45-4623-818e-70436ab9315f) and start prompting.
+🔍 Search & Filters for easy product discovery by anime, price, or category
 
-Changes made via Lovable will be committed automatically to this repo.
+💬 Reviews & Ratings to build trust and social proof
 
-**Use your preferred IDE**
+🚚 Order Tracking and clearly defined shipping/return policies
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+💌 Newsletter & Affiliate System for growing your anime-loving community
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+💻 Tech Stack (customize based on your stack)
+Frontend: Next.js, Tailwind CSS
 
-Follow these steps:
+Backend: React, Express, MongoDB
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Payment: Razorpay / Stripe integration
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Auth: JWT / NextAuth
 
-# Step 3: Install the necessary dependencies.
-npm i
+Deployment: Vercel / Netlify
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+📦 Coming Soon
+Blog with anime news and merch drops
 
-**Edit a file directly in GitHub**
+Community reviews and cosplay gallery
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Mobile app version (React Native or Expo)
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e3fe2afc-ca45-4623-818e-70436ab9315f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Feel free to fork, contribute, or drop a star if you love anime! 🌸
